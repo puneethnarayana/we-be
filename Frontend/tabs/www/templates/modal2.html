@@ -1,0 +1,48 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">{{var|uppercase}}</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin2()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content ion-sticky>
+        <ion-list>
+            
+          <div ng-repeat="group in groups">
+            <ion-item class="item-divider item-stable" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+              <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus-circled' : 'ion-help-circled'"></i> &nbsp; Group: {{group.name}}
+            </ion-item>
+            <ion-item class="item-accordion" ng-repeat="item in group.items" ng-show="isGroupShown(group)">
+              {{item}}
+            </ion-item>
+          </div>
+        </ion-list>
+
+        <div class="list card" ng-repeat="group in groups1">
+
+          <div class="item">
+            <h2>{{group.name}}</h2>
+            <p>{{group.price}}</p>
+          </div>
+
+          <div class="item item-body">
+            <img class="full-image" src="{{group.img}}">
+            <button class="button button-full button-assertive button-small" ng-click="{{group.url}}">Buy Now</button>
+          </div>
+
+        </div>
+        <div class="list card">
+
+          <div class="item">
+            <h2>General Sentiment</h2>
+            <p>Positive.</p>
+          </div>
+
+          <div class="item item-body">
+            <img class="full-image" src="http://www.polyvista.com/blog/wp-content/uploads/2015/06/sentiment-customer-exp-large.png">
+            <p>
+              This item has a positive score of 0.7331</p>
+          </div>
+        </div>
+  </ion-content>
+</ion-modal-view>

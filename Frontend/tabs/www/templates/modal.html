@@ -1,0 +1,13 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">#Trending</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin1()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <ion-list ng-repeat="x in playlists">
+        <ion-item ng-href='https://twitter.com/search?q=%23{{x.title}}'> {{x.title}} </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-modal-view>

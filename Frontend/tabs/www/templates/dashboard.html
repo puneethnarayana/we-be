@@ -1,0 +1,24 @@
+<ion-view view-title="Dashboard">
+  <ion-content ng-controller="dashboardCtrl">
+    <div class="card" ng-repeat="x in data">
+      <div class="item item-avatar">
+        <img src="{{x.src}}">
+        <h2>{{x.text}}</h2>
+      </div>
+    </div>
+    <div class="card" ng-repeat="x in dats">
+      <div class="item item-icon">
+        <img src="{{x.src}}">
+        <h2>{{x.text}}</h2>
+        <p>{{x.sub}}</p>
+      </div>
+      <a class="item item-icon-left positive" onclick="window.open('http://www.bestbuy.com/site/apple-macbook-air-latest-model-13-3-display-intel-core-i5-8gb-memory-128gb-flash-storage-silver/6443034.p?id=1219661416264&skuId=6443034', '_system', 'location=yes'); return false;">
+        <i class="icon ion-help"></i> Know More
+      </a>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer bar-balanced">
+    <div class="title title-assertive" on-swipe-up="tweet()"> Swipe up for #trending!</div>
+    <button class="button icon ion-chevron-up pull-right"></button>
+  </div>
+</ion-view>

@@ -1,0 +1,35 @@
+img.fit {
+  max-width: 100%;
+  max-height: 100%;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.image-modal {
+  max-width: 100%;
+  height: auto;
+}
+.fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}

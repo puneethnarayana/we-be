@@ -1,0 +1,12 @@
+<ion-view view-title="Search">
+  <ion-content ng-controller="UploadController">
+    <img ng-src="{{image.src}}" class="center image-modal" onclick="document.getElementById('file').click();">
+    <div class="button-bar">
+      <a class="button button-energized" ng-click="addImage()" ng-controller="imageController">Camera</a>
+      <a class="button button-calm" onclick="document.getElementById('file').click();">Select Photo</a>
+    </div>
+    <input class="bottom-marg-15" id="file" type="file" name="file" file="file" style="display:none">
+    <button class="button button-full button-balanced" ng-disabled="!file.size || uploadProgress > 0" ng-click="upload()" ng-cloak="">Upload</button>
+    <span ng-if="error" ng-bind="result.error" style="color:red;font-weight:bold"></span>
+  </ion-content>
+</ion-view>
