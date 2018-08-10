@@ -73,7 +73,7 @@
     "optimist": "0.6.0",
     "pica": "latest",
     "request": "2.21.0",
-    "semver": "2.0.x",
+    "semver": "4.3.2",
     "string.prototype.endswith": "0.2.0",
     "time-grunt": "^1.0.0",
     "underscore": "1.5.2",
